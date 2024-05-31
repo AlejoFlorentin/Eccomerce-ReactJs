@@ -1,107 +1,119 @@
 [{
     "id":1,
    "title":"Remera Oversize Negra",
-    "price":"25990,00",
+    "price":25990.00,
     "category":"remeras",
     "img":"/img/remeras/remeraOvNegra.png",
-    "descripcion":"La remera oversize negra, con su corte amplio y color versátil, es la elección perfecta para un estilo moderno y cómodo en cualquier ocasión."
+    "descripcion":"La remera oversize negra, con su corte amplio y color versátil, es la elección perfecta para un estilo moderno y cómodo en cualquier ocasión.",
+    "stock":10
+
 },
 {
     "id":2,
    "title":"Remera Oversize Roja",
-    "price":"25990,00",
+    "price":25990.00,
     "category":"remeras",
     "img":"/img/remeras/remeraOvRoja.jpg",
-    "descripcion":"Una remera oversize en rojo vibrante, perfecta para destacar con estilo y comodidad en cualquier ocasión."
+    "descripcion":"Una remera oversize en rojo vibrante, perfecta para destacar con estilo y comodidad en cualquier ocasión.",
+    "stock":10
 
 },
 {
     "id":3,
    "title":"Remera Oversize Beige",
-    "price":"25990,00",
+    "price":25990.00,
     "category":"remeras",
     "img":"/img/remeras/remeraOvBeige.webp",
-    "descripcion":"Una remera oversize en tono beige, para un estilo relajado y elegante en cualquier ocasión."
+    "descripcion":"Una remera oversize en tono beige, para un estilo relajado y elegante en cualquier ocasión.",
+    "stock":10
 
 },
 {
     "id":4,
    "title":"Remera Oversize Estampada",
-    "price":"30990,00",
+    "price":30990.00,
     "category":"remeras",
     "img":"/img/remeras/remeraOvEstampa.jpg",
-    "descripcion": "Una remera oversize con estampado único, para un look vanguardista y lleno de personalidad en cada ocasión."
+    "descripcion": "Una remera oversize con estampado único, para un look vanguardista y lleno de personalidad en cada ocasión.",
+    "stock":10
 
 },
 {
     "id":5,
    "title":"Jean Roto Recto",
-    "price":"60990,00",
+    "price":60990.00,
     "category":"pantalones",
     "img":"/img/pantalones/jeanRotoRecto.webp",
-    "descripcion":"Un par de jeans rectos y rotos, que añaden un toque de rebeldía y estilo desenfadado a tu atuendo diario."
+    "descripcion":"Un par de jeans rectos y rotos, que añaden un toque de rebeldía y estilo desenfadado a tu atuendo diario.",
+    "stock":10
 
 },
 {
     "id":6,
    "title":"Jogger Negro",
-    "price":"45990,00",
+    "price":45990.00,
     "category":"pantalones",
     "img":"/img/pantalones/joggerNegro.webp",
-    "descripcion":"Un par de joggers negros, la opción perfecta para combinar comodidad y estilo en tus actividades diarias, con un toque urbano y moderno."
+    "descripcion":"Un par de joggers negros, la opción perfecta para combinar comodidad y estilo en tus actividades diarias, con un toque urbano y moderno.",
+    "stock":10
 
 },
 {
     "id":7,
    "title":"Jean Recto Negro",
-    "price":"50990,00",
+    "price":50990.00,
     "category":"pantalones",
     "img":"/img/pantalones/jeanNegroRecto.webp",
-    "descripcion":"Un par de jeans negros de corte recto, versátiles y atemporales, ideales para un estilo elegante y casual en cualquier ocasión."
+    "descripcion":"Un par de jeans negros de corte recto, versátiles y atemporales, ideales para un estilo elegante y casual en cualquier ocasión.",
+    "stock":10
 
 },
 {
     "id":8,
    "title":"Pantalon Cargo",
-    "price":"47990,00",
+    "price":47990.00,
     "category":"pantalones",
     "img":"/img/pantalones/pantalonCargo.jpg",
-    "descripcion":"Un pantalón cargo, con múltiples bolsillos y un diseño funcional, perfecto para un estilo urbano y práctico, listo para cualquier aventura."
+    "descripcion":"Un pantalón cargo, con múltiples bolsillos y un diseño funcional, perfecto para un estilo urbano y práctico, listo para cualquier aventura.",
+    "stock":10
 
 },
 {
     "id":9,
    "title":"Bermuda Cargo",
-    "price":"40.990,09",
+    "price":40990.00,
     "category":"bermudas",
     "img":"/img/bermudas/bermudaCargo.webp",
-    "descripcion":"Una bermuda cargo, con bolsillos adicionales para un estilo funcional y urbano, ideal para días de aventura o simplemente para un look casual y fresco."
+    "descripcion":"Una bermuda cargo, con bolsillos adicionales para un estilo funcional y urbano, ideal para días de aventura o simplemente para un look casual y fresco.",
+    "stock":10
 
 },
 {
     "id":10,
    "title":"Bermuda de Jean Rota",
-    "price":"30.990,00",
+    "price":30990.00,
     "category":"bermudas",
     "img":"/img/bermudas/bermudaDeJeanRota.webp",
-    "descripcion": "Una bermuda de jean con detalles rotos, perfecta para un estilo desenfadado y lleno de personalidad en los días de calor."
+    "descripcion": "Una bermuda de jean con detalles rotos, perfecta para un estilo desenfadado y lleno de personalidad en los días de calor.",
+    "stock":10
 
 },
 {
     "id":11,
    "title":"Bermuda Negra",
-    "price":"40.990,00",
+    "price":40990.00,
     "category":"bermudas",
     "img":"/img/bermudas/bermudaNegra.jpg",
-    "descripcion":"Una bermuda negra, versátil y atemporal, ideal para un look urbano y elegante en los días de calor."
-
+    "descripcion":"Una bermuda negra, versátil y atemporal, ideal para un look urbano y elegante en los días de calor.",
+    "stock":10
 },
 {
     "id":12,
    "title":"Bermuda de jean",
-    "price":"45.990,00",
+    "price":45990.00,
     "category":"bermudas",
     "img":"/img/bermudas/bermudaJean.webp",
-    "descripcion":"Una clásica bermuda de jean, perfecta para un estilo casual y cómodo en los días de sol."
+    "descripcion":"Una clásica bermuda de jean, perfecta para un estilo casual y cómodo en los días de sol.",
+    "stock":10
 
 }]

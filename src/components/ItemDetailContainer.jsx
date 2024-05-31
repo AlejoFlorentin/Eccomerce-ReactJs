@@ -1,47 +1,53 @@
 import { useEffect, useState } from "react"
-import productos from '../data/Productos.json'
-import { useParams } from "react-router-dom"
-import ItemCount from "./ItemCount"
+import { Link, useParams } from "react-router-dom"
+import ItemDetail from "./ItemDetail"
+import { doc, getDoc, getFirestore } from "firebase/firestore"
+
 
 const ItemDetailContainer = () => {
     
    
     
     const [prendas,setPrendas] = useState([])
-
+    const [error, setError] = useState('');
+    
     const {idProducto}=useParams()
     
-    
-
     useEffect(() => {
+    
+        const db = getFirestore()
+        const docRef = doc(db , "prendas" , idProducto)
+        getDoc(docRef)
+          .then((resp)=>{
+             if (resp.exists()) {
+                setPrendas({ ...resp.data(), id: resp.id })
+  
+            } else {
+                    setError('El producto no existe.');
+            }
+          })
+         }, [idProducto])
 
-        const promesa = new Promise((resolve, reject) => {
 
-           const filtrarPrendas=productos.find(item=> item.id === parseInt(idProducto))
-           
-           resolve(filtrarPrendas)
+        if (error) {
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col text-center mt-5">
+                        <i class='bx bxs-x-circle'></i>
+                        <h1 className="mt-5">{error}</h1>
+                        <Link className="mt-5" to="/">Volver al Home</Link>
+                    </div>
+                </div>
 
-        })
-        promesa.then(result => {
-            
-            setPrendas(result)
-
-        })
-
-    }, [idProducto])
+            </div>
+        ) ;
+        }
 
     return(
-        <div className="itemDetail col d-flex flex-row justify-content-evenly mt-5 mb-5">
-            <img src={prendas.img} alt={prendas.title} />
-            <div className="info d-flex flex-column align-items-center justify-content-center gap-5">
-                <h2>{prendas.title}</h2>
-                <p className="w-50 text-center">{prendas.descripcion}</p>
-                <p>$ {prendas.price}</p>
-                <ItemCount/>
-                <button type="button" class="btn-agregar btn btn-dark ">Agregar al carrito</button>
-            </div>
-            
-        </div>    
+        
+        <ItemDetail prendas={prendas}/>
+
     )
     
 
